@@ -308,7 +308,7 @@ function App() {
             <div className="passo-card">
               <div className="passo-numero">1</div>
               <div className="passo-conteudo">
-                <strong>1. DEFINIR PERÍODO</strong>
+                <strong>DEFINIR PERÍODO</strong>
                 <p>Utilize os seletores no topo da página para escolher o mês e o ano de referência.</p>
               </div>
             </div>
@@ -316,7 +316,7 @@ function App() {
             <div className="passo-card">
               <div className="passo-numero">2</div>
               <div className="passo-conteudo">
-                <strong>2. INDICAR FERIADOS</strong>
+                <strong>INDICAR FERIADOS OU DIAS DE FECHAMENTO</strong>
                 <p>Marque a caixa de seleção nos dias específicos para sinalizar pontos facultativos ou data de fechamento.</p>
               </div>
             </div>
@@ -324,7 +324,7 @@ function App() {
             <div className="passo-card">
               <div className="passo-numero">3</div>
               <div className="passo-conteudo">
-                <strong>3. REGISTRAR PROCEDIMENTOS</strong>
+                <strong>REGISTRAR PROCEDIMENTOS</strong>
                 <p>Clique sobre qualquer dia do calendário e insira as informações dos atendimentos ou atividades agendadas.</p>
               </div>
             </div>
@@ -332,15 +332,15 @@ function App() {
             <div className="passo-card">
               <div className="passo-numero">4</div>
               <div className="passo-conteudo">
-                <strong>4. INSERIR OBSERVAÇÕES</strong>
-                <p>Use o campo "Avisos" no rodapé para adicionar lembretes ou comunicados gerais.</p>
+                <strong>INSERIR OBSERVAÇÕES</strong>
+                <p>Se for necessário, use o campo "Avisos" no rodapé para adicionar lembretes ou comunicados gerais.</p>
               </div>
             </div>
 
             <div className="passo-card">
               <div className="passo-numero">5</div>
               <div className="passo-conteudo">
-                <strong>5. SELECIONAR UNIDADE</strong>
+                <strong>SELECIONAR UNIDADE</strong>
                 <p>Escolha a unidade operacional que utilizará o calendário para personalizar o cabeçalho.</p>
               </div>
             </div>
@@ -348,7 +348,7 @@ function App() {
             <div className="passo-card">
               <div className="passo-numero">6</div>
               <div className="passo-conteudo">
-                <strong>6. EXPORTAR DOCUMENTO</strong>
+                <strong>EXPORTAR DOCUMENTO</strong>
                 <p>Finalize gerando uma imagem.</p>
               </div>
             </div>
@@ -413,7 +413,7 @@ function App() {
                           </div>
                           <textarea
                             className={`entrada-dia ${eFeriado ? "feriado-ativo" : ""}`}
-                            placeholder={eFeriado ? "" : "Clique aqui para adicionar texto..."}
+                            placeholder={eFeriado ? "" : "Adicione um texto!"}
                             value={valorNota}
                             onChange={(e) => atualizarNota(item.dia, e.target.value)}
                             disabled={eFeriado}
@@ -507,7 +507,7 @@ function App() {
           </div>
 
           <div className="seletor-background">
-            <h3>🎨 FUNDO DA FOLHA</h3>
+            <h3>🎨 PLANO DE FUNDO</h3>
             <div className="lista-backgrounds">
               {backgroundsDisponiveis.map((bg) => (
                 <button
